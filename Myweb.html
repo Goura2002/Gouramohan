@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Gouramohan | Official Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  overflow:hidden;
+}
+
+/* ===== Video Background ===== */
+.video-bg{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:-2;
+}
+
+.video-bg video{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* ===== Dark Overlay ===== */
+.overlay{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.65);
+  z-index:-1;
+}
+
+/* ===== Main Content ===== */
+.content{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:#fff;
+  padding:20px;
+}
+
+/* ===== Heading ===== */
+.content h1{
+  color:yellow;
+  font-size:32px;
+  margin-bottom:10px;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow{
+  from{text-shadow:0 0 5px yellow;}
+  to{text-shadow:0 0 20px orange;}
+}
+
+.content p{
+  font-size:16px;
+  margin-bottom:20px;
+  opacity:0.9;
+}
+
+/* ===== Line ===== */
+hr{
+  border:none;
+  height:3px;
+  width:80%;
+  background:red;
+  margin:20px auto;
+}
+
+/* ===== Links ===== */
+.links a{
+  display:block;
+  width:220px;
+  padding:12px;
+  margin:10px;
+  text-decoration:none;
+  color:#000;
+  background:#00ffcc;
+  border-radius:30px;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.links a:hover{
+  background:yellow;
+  transform:scale(1.05);
+}
+
+/* ===== Footer ===== */
+.footer{
+  position:fixed;
+  bottom:10px;
+  width:100%;
+  text-align:center;
+  color:#fff;
+  font-size:14px;
+  opacity:0.8;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===== Video Background ===== -->
+<div class="video-bg">
+  <video autoplay muted loop playsinline>
+    <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+  </video>
+</div>
+
+<div class="overlay"></div>
+
+<!-- ===== Content ===== -->
+<div class="content">
+
+  <marquee behavior="alternate">
+    <h1>Welcome to My Website</h1>
+  </marquee>
+
+  <p>Simple • Professional • Mobile Friendly</p>
+
+  <hr>
+
+  <div class="links">
+    <a href="https://www.google.com" target="_blank">🌐 Google</a>
+    <a href="https://www.youtube.com" target="_blank">▶ YouTube</a>
+    <a href="https://www.instagram.com" target="_blank">📸 Instagram</a>
+    <a href="https://m.facebook.com" target="_blank">📘 Facebook</a>
+  </div>
+
+</div>
+
+<!-- ===== Footer ===== -->
+<div class="footer">
+  Developed by <b>Gouramohan</b>
+</div>
+
+</body>
+</html>
